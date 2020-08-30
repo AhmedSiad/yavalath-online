@@ -1,0 +1,110 @@
+body {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5em;
+    background-color: #f1f4f9;
+    user-select: none;
+}
+
+h1 {
+    margin-bottom: 0%;
+}
+
+.wrapper {
+    width: 1400px;
+    height: 900px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    min-width: 1200px;
+}
+
+canvas {
+    /*display: inline;*/
+}
+
+.popupBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 1px 5000px rgba(0,0,0,0.6);
+
+    height: 200px;
+    width: 420px;
+
+    background-color: #005283;
+    border: solid black 2px;
+    text-align: center;
+    padding: 0.3em;
+}
+
+.winBoxHeader, .disconnectBoxHeader {
+    text-align: center;
+    display: block;
+    font-size: 3em;
+    height: 50%;
+}
+
+.urlBoxHeader {
+    height: 40%;
+    font-size: 2.75em;
+}
+
+.winBoxBody, .urlBoxBody, .disconnectBoxBody {
+    font-size: 1em;
+    height: 25%;
+}
+
+.urlContainer {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rematchContainer {
+    height: 30%;
+}
+
+.urlInput {
+    width: 80%;
+    height: 60%;
+    text-align: center;
+    background-color: #005283;
+    border: solid black 2px;
+    color: white;
+
+    font-size: 0.6em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.rematchButton {
+    width: 55%;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+
+.request {
+    background-color: #38baeb;
+    border: solid 1px #28aadb;
+}
+
+.request:hover {
+    background-color: #189acb;
+}
+
+.accept {
+    background-color: #00CC00;
+    border: solid 1px #00BB00;
+}
+
+.accept:hover {
+    background-color: #00AA00;
+}

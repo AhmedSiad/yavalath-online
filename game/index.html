@@ -1,0 +1,63 @@
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+    <link rel="stylesheet" href="game/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="game/tile.js"></script>
+    <script src="game/game.js"></script>
+    <script src="game/app.js"></script>
+
+    <title>Yavalath</title>
+</head>
+
+
+<div class="wrapper">
+    <h1>Yavalath Online</h1>
+    <div id="canvas">
+
+    </div>
+
+    <div id="winBox" class="popupBox" style="visibility: hidden;">
+        <div id="winText" class="winBoxHeader">
+            You Win!
+        </div>
+
+        <div id="winDescription" class="winBoxBody">
+            You made 4 in a row!
+        </div>
+
+        <div class="rematchContainer">
+            <button id="rematchButton" class="rematchButton request" onclick="rematch()">Request Rematch</button>       
+        </div>
+    </div>
+
+    <div id="urlBox" class="popupBox" style="visibility: hidden;">
+        <div class="urlBoxHeader">
+            Game Link: 
+        </div>
+
+        <div class="urlContainer">
+            <input id="urlLink" class="urlInput" readonly>    
+        </div>
+
+        <div class="urlBoxBody">
+            Share this link to play <br>with a friend!
+        </div>
+    </div>
+
+    <div id="disconnectBox" class="popupBox" style="visibility: hidden;">
+        <div class="disconnectBoxHeader">
+            Oh No! 
+        </div>
+
+        <div class="disconnectBoxBody">
+            Your opponent has disconnected.
+        </div>
+
+        <div class="disconnectBoxBody">
+            <a href="https://yavalath-online.herokuapp.com">Go back to home.</a>
+        </div>
+    </div>
+</div>

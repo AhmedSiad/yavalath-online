@@ -1,0 +1,31 @@
+body {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5em;
+    background-color: #f1f4f9;
+    user-select: none;
+}
+
+h1 {
+    margin-bottom: 0%;
+}
+
+.wrapper {
+    width: 900px;
+    height: 900px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    min-width: 900px;
+}
+
+button {
+    width: 55%;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'Fredoka One', cursive;
+    background-color: #EEEEEE;
+}
+
+button:hover {
+    background-color: #DDDDDD;
+}
